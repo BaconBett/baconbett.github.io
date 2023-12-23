@@ -21,7 +21,7 @@ nav ul {
     list-style-type: none ;
     margin: 0;
     padding: 0;
-    display: flex;
+    
 }
 
 nav li {
@@ -77,44 +77,46 @@ nav a:hover {
     font-size: 1.5em;
 }
 
+
 .menu-icon {
-    display: none;
     cursor: pointer;
 }
 
-.menu-icon .bar {
+.menu-icon div {
     width: 25px;
     height: 3px;
     background-color: #fff;
     margin: 6px 0;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links ul {
+@media screen{
+    .nav-links {
         display: none;
-        flex-direction: column;
-        background-color: #333;
         position: absolute;
         top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
+        right: 20px; /* Adjust the distance from the top-right corner */
+        background-color: #333;
+        width: 150px; /* Set the width of the dropdown box */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow for a subtle effect */
+        z-index: 1; /* Ensure the dropdown appears above other elements */
     }
 
-    .nav-links ul.active {
-        display: flex;
+    .nav-links.active {
+        display: grid;
+    }
+
+    .nav-links ul {
+        list-style-type: square;
+        padding: 0;
+        margin: 0;
     }
 
     .nav-links ul li {
         padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #fff; /* Add a border between items */
     }
 
-    .menu-icon {
-        display: block;
-    }
-
-    .top-bar {
-        position: relative;
-    }
+    /* ... other styles ... */
 }
 
