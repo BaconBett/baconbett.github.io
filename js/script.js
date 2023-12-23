@@ -1,5 +1,16 @@
-function toggleMenu() {
-    var navLinks = document.querySelector('.nav-links ul');
-    navLinks.classList.toggle('active');
-    console.log("Hambuger")
+
+
+function toggleMenu(menuVisible) {
+  
+    if(!menuVisible){
+        $('.nav-links').css("display", "block");
+        return true;
+    }else{
+        $('.nav-links').css("display", "none");
+    }
+    console.log(visible);
+    
+    
+
+
 }

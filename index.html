@@ -16,7 +16,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-icon" onclick="toggleMenu(menuVisible)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -31,7 +31,17 @@
            
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+    <script>
+        var menuVisible = false;
+        function hamburger(visible){
+            toggleMenu(visible)
+            return !visible
+        }
+
+        
+
+    </script>
 </body>
 </html>
