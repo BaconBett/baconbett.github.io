@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>BaconBett.de</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Task Manager</h1>
+    <div class="top-bar">
+        <div class="logo">BaconBett.de</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    
+    <div class="hero-section">
         
-        <form id="taskForm">
-            <label for="taskName">Task:</label>
-            <input type="text" id="taskName" required>
-            <label for="dueDate">Due Date:</label>
-            <input type="date" id="dueDate" required>
-            <button type="button" onclick="addTask()">Add Task</button>
-        </form>
-
-        <ul id="taskList">
-            <!-- Task items will be added dynamically here -->
-        </ul>
+        <div class="title">
+            <h1>Wilkommen</h1>
+            <p></p>
+           
+        </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
